@@ -1,7 +1,8 @@
 from ppf.constants import *
 from ppf.utils.common import read_yaml, create_directories
 from ppf.entity import (DataIngestionConfig,
-                        DataValidationConfig)
+                        DataValidationConfig, 
+                        ModelTrainerConfig)
 
 class ConfigurationManager:
     def __init__(self, config_filepath= CONFIG_FILE_PATH, params_filepath= PARAMS_FILE_PATH):
@@ -38,6 +39,25 @@ class ConfigurationManager:
         )
 
         return data_validation_config
+
+
+    def get_model_trainer_config(self) -> ModelTrainerConfig:
+
+        config = self.config.model_trainer
+        params = self.params.TrainingArguments
+
+        create_directories([config.root_dir])
+        
+        model_trainer_config =  ModelTrainerConfig(
+            root_dir = config.root_dir,
+            data_path = config.data_path,
+            model_path = config.model_path,
+            p = params.p,
+            d = params.d,
+            q = params.q
+        )
+        
+        return model_trainer_config
 
 
     

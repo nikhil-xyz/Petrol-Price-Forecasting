@@ -13,3 +13,12 @@ class DataValidationConfig:
     root_dir: Path
     STATUS_FILE: str
     ALL_REQUIRED_FILES: list
+
+@dataclass
+class ModelTrainerConfig:
+    root_dir: Path
+    data_path: Path
+    model_path: Path
+    p: int
+    d: int
+    q: int
