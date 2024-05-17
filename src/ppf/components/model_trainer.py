@@ -23,5 +23,5 @@ class ModelTrainer:
         model_fit=model.fit()
         
         # save model
-        pickle.dump(model, open(self.config.model_path, 'wb'))
+        pickle.dump(model_fit, open(self.config.model_path, 'wb'))
         logger.info(f'Model is stored as {self.config.model_path}')

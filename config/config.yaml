@@ -18,3 +18,11 @@ model_trainer:
   data_path: artifacts/data_ingestion/preprocessed_data/train.csv
   model_path: artifacts/model_trainer/model.pkl
   
+
+model_evaluation:
+  root_dir: artifacts/model_evaluation
+  train_data_path: artifacts/data_ingestion/preprocessed_data/train.csv
+  test_data_path: artifacts/data_ingestion/preprocessed_data/test.csv
+  model_path: artifacts/model_trainer/model.pkl
+  predictions_path: artifacts/model_evaluation/predictions.csv
+  

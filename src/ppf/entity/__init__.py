@@ -22,3 +22,15 @@ class ModelTrainerConfig:
     p: int
     d: int
     q: int
+
+
+@dataclass
+class ModelEvaluationConfig:
+    root_dir: Path
+    train_data_path: Path
+    test_data_path: Path
+    model_path: Path
+    predictions_path: Path
+    p: int
+    d: int
+    q: int
