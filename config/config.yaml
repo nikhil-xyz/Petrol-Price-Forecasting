@@ -25,4 +25,6 @@ model_evaluation:
   test_data_path: artifacts/data_ingestion/preprocessed_data/test.csv
   model_path: artifacts/model_trainer/model.pkl
   predictions_path: artifacts/model_evaluation/predictions.csv
+
+
   
