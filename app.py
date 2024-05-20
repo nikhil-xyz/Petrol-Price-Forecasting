@@ -55,6 +55,7 @@ if st.session_state['search_btn']:
     st.write(df_predicted)
     
 
+    # ploting the predictions
     fig, ax = plt.subplots()
     train_dataset.plot(ax=ax, legend=True, label='Past Price')
     predictions.plot(ax=ax, legend=True, label='Forecasted Price')
