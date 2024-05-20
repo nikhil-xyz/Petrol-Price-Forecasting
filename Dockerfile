@@ -6,6 +6,5 @@ WORKDIR /app
 COPY . /app
 
 RUN pip install -r requirements.txt
-expose 8501
 
 CMD ["streamlit", "run", "app.py"]
