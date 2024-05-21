@@ -88,6 +88,4 @@ streamlit run app.py
 
     ECR_REPOSITORY_NAME = simple-app
 
-## Streamlit Exposed port
-8501
 
