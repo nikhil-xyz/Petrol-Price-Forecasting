@@ -1,12 +1,8 @@
 # Petrol Price Forecasting ML Project
 
-<<<<<<< HEAD
 ### Clone the Repository
-```
-=======
 ## Clone the Repository
-```bash
->>>>>>> c70e10c856827ae4902f942918d88284e2000098
+```
 https://github.com/nikhil-xyz/Petrol-Price-Forecasting.git
 ```
 
@@ -21,7 +17,6 @@ conda activate venv
 streamlit run app.py
 ```
 
-<<<<<<< HEAD
 ### Streamlit Exposed port
 8501
 
@@ -92,7 +87,7 @@ streamlit run app.py
     AWS_ECR_LOGIN_URI = demo>>  566373416292.dkr.ecr.ap-south-1.amazonaws.com
 
     ECR_REPOSITORY_NAME = simple-app
-=======
+
 ## Streamlit Exposed port
 8501
->>>>>>> c70e10c856827ae4902f942918d88284e2000098
+
