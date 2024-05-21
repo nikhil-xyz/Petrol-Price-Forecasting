@@ -13,12 +13,13 @@ class ModelTrainer:
         self.config = config
 
     def train(self):
-    
+        # Reading the training data
         dataset = pd.read_csv(self.config.data_path, index_col=False)  
         dataset.set_index('Date', inplace=True)
         dataset.index = pd.to_datetime(dataset.index)
         # print(dataset)
 
+        # Training the model
         model=ARIMA(dataset, order=(self.config.p, self.config.d, self.config.q))
         model_fit=model.fit()
         
