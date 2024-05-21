@@ -1,8 +1,8 @@
 # Petrol Price Forecasting ML Project
 
 ## Clone the Repository
-'''
-[GitHub](https://github.com/nikhil-xyz/Petrol-Price-Forecasting.git)
+'''bash
+https://github.com/nikhil-xyz/Petrol-Price-Forecasting.git
 '''
 
 ## Create a Conda environment and activating it
