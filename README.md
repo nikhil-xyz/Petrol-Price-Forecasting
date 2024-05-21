@@ -2,7 +2,7 @@
 
 ## Clone the Repository
 '''
-https://github.com/nikhil-xyz/Petrol-Price-Forecasting.git
+[GitHub](https://github.com/nikhil-xyz/Petrol-Price-Forecasting.git)
 '''
 
 ## Create a Conda environment and activating it
