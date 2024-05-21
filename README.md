@@ -1,12 +1,10 @@
 # Petrol Price Forecasting ML Project
 
-<<<<<<< HEAD
 ### Clone the Repository
 ```
 =======
 ## Clone the Repository
-```bash
->>>>>>> c70e10c856827ae4902f942918d88284e2000098
+```
 https://github.com/nikhil-xyz/Petrol-Price-Forecasting.git
 ```
 
@@ -95,4 +93,3 @@ streamlit run app.py
 =======
 ## Streamlit Exposed port
 8501
->>>>>>> c70e10c856827ae4902f942918d88284e2000098
