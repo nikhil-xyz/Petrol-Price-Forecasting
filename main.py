@@ -7,6 +7,7 @@ from ppf.logging import logger
 import warnings
 warnings.filterwarnings('ignore')
 
+
 STAGE_NAME = 'data_ingestion_training'
 try:
     logger.info(f'>>>>> stage {STAGE_NAME} has started <<<<<')
@@ -16,6 +17,7 @@ try:
 except Exception as e:
     logger.error(f'>>>>> stage {STAGE_NAME} has failed <<<<<')
     raise e
+logger.info('----------------------------------------------------------------')
 
 
 STAGE_NAME = 'data_validation_training'
@@ -27,6 +29,7 @@ try:
 except Exception as e:
     logger.error(f'>>>>> stage {STAGE_NAME} has failed <<<<<')
     raise e
+logger.info('----------------------------------------------------------------')
 
 
 STAGE_NAME = 'model_training'
@@ -38,7 +41,7 @@ try:
 except Exception as e:
     logger.error(f'>>>>> stage {STAGE_NAME} has failed <<<<<')
     raise e
-
+logger.info('----------------------------------------------------------------')
 
 STAGE_NAME = 'model_evaluation'
 try:
@@ -49,3 +52,4 @@ try:
 except Exception as e:
     logger.error(f'>>>>> stage {STAGE_NAME} has failed <<<<<')
     raise e
+logger.info('----------------------------------------------------------------')
