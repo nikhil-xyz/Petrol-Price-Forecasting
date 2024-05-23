@@ -11,6 +11,7 @@ from ppf.logging import logger
 import asyncio
 
 
+# loading configuration manager
 config = ConfigurationManager()
 config = config.get_model_evaluation_config()
 
