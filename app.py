@@ -8,7 +8,6 @@ import pandas as pd
 from ppf.config.configuration import ConfigurationManager
 from ppf.entity import ModelEvaluationConfig
 from ppf.logging import logger
-import asyncio
 
 
 # loading configuration manager
@@ -18,17 +17,11 @@ config = config.get_model_evaluation_config()
 
 st.title('Petrol Price Forecasting')
 
-async def async_task():
-    # executing main.py
-    try:
-        os.system("python main.py")
-        logger.info("Training Successful!")
-    except Exception as e:
-        logger.info(f"Error occured {e}")
+if 'count' not in st.session_state:
+    st.session_state.count = 0
 
 
-async def main():
-    await async_task()
+def main():
     def callback_search():
     #   Destroying old sessions
         st.session_state['search_btn'] = False
@@ -66,6 +59,7 @@ async def main():
     if st.session_state['search_btn']:
         predictions = model.predict(len(train_dataset), len(train_dataset)+option-1)
         df_predicted = pd.DataFrame(predictions)
+        df_predicted = df_predicted.rename(columns={'predicted_mean': 'Forecasted Price'})
         
         st.write('Predictions') 
         st.write(df_predicted)
@@ -79,7 +73,12 @@ async def main():
         ax.set_ylabel('Price (USD)')
         st.pyplot(fig)
 
-asyncio.run(main())
+if __name__ == '__main__':
+    if (st.session_state.count == 0):
+        st.session_state.count += 1
+        os.system("python main.py")
+        logger.info("Training Successful!")
+    main()
         
 
 

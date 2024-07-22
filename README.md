@@ -1,7 +1,6 @@
 # Petrol Price Forecasting ML Project
 
 ### Clone the Repository
-## Clone the Repository
 ```
 https://github.com/nikhil-xyz/Petrol-Price-Forecasting.git
 ```

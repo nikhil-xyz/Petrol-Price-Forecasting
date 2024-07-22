@@ -8,4 +8,4 @@ COPY . /app
 
 RUN pip install -r requirements.txt
 
-CMD ["streamlit", "run", "app.py"]
+CMD ["nohup", "streamlit", "run", "app.py"]
