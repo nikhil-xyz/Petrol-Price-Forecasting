@@ -74,10 +74,12 @@ def main():
         st.pyplot(fig)
 
 if __name__ == '__main__':
+
     if (st.session_state.count == 0):
         st.session_state.count += 1
         os.system("python main.py")
         logger.info("Training Successful!")
+        
     main()
         
 
