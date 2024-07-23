@@ -79,6 +79,7 @@ if __name__ == '__main__':
         st.session_state.count += 1
         os.system("python main.py")
         logger.info("Training Successful!")
+
         
     main()
         
