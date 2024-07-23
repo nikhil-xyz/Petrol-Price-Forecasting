@@ -80,7 +80,6 @@ if __name__ == '__main__':
         os.system("python main.py")
         logger.info("Training Successful!")
 
-        
     main()
         
 
